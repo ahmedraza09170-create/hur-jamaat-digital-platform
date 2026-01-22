@@ -1,0 +1,65 @@
+:root {
+    --deep-green: #004d40;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.navbar {
+    background: var(--white);
+}
+
+.nav-link {
+    color: var(--deep-green) !important;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(rgba(0, 77, 64, 0.8), rgba(0, 77, 64, 0.8)),
+        url('https://i.pinimg.com/1200x/fb/21/9b/fb219bc012bfd4c30c0f1c4616e86da7.jpg') center/cover no-repeat;
+}
+
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--deep-green);
+    border: 2px solid var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gold:hover {
+    background: transparent;
+    color: var(--gold) !important;
+}
+
+.profile-frame img {
+    border: 10px solid var(--white);
+    outline: 2px solid var(--gold);
+}
+
+
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem !important;
+    }
+}
