@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | The Hur Movement & Pir Pagaro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .history-hero {
+            background: linear-gradient(rgba(0, 77, 64, 0.85), rgba(0, 77, 64, 0.85)),
+                url('assets/history-bg.jpg') center/cover no-repeat;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        /* Modern Bootstrap Timeline Logic */
+        .timeline {
+            position: relative;
+            padding: 50px 0;
+        }
+
+        /* Central Line */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background: var(--gold);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: var(--white);
+            border: 4px solid var(--deep-green);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .timeline-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-bottom: 5px solid var(--deep-green);
+            transition: var(--transition);
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--gold);
+        }
+
+        /* Desktop specific alignment */
+        @media (min-width: 992px) {
+            .timeline-item:nth-child(even) .timeline-row {
+                flex-direction: row-reverse;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content {
+                text-align: right;
+            }
+        }
+
+        /* Mobile specific alignment */
+        @media (max-width: 991px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .timeline-content {
+                margin-left: 45px;
+                text-align: left !important;
+            }
+        }
+
+        .text-success {
+            color: #004d40;
+        }
+
+        @media (max-width: 991px) {
+            .fs-5 {
+                font-size: 1.1rem;
+            }
+        }
+          .gallery-card img {
+        transition: transform 0.3s ease;
+    }
+    .gallery-card:hover img {
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--deep-green);">
+                BHEJ PAGARA<span style="color: var(--gold);">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase fw-semibold" style="font-size: 0.85rem;">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="history.html"
+                            style="color: var(--gold) !important;">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="khalifaas.html">Khalifaas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nizam-e-jamaat.html">Nizam-e-Jamaat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="history-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3" data-aos="fade-down">A Legacy of Sacrifice</h1>
+            <p class="lead" data-aos="fade-up"> From Spiritual Leadership to Revolutionary Struggle —
+                Explore the Journey of the Hur Community and their Custodians in Sindh.</p>
+        </div>
+    </section>
+
+
+   <section class="py-5">
+    <div class="container-fluid py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up">
+                <div class="card shadow-lg rounded-4 p-4 p-md-5" style="border-left: 6px solid #004d40;">
+                    <h2 class="fw-bold mb-3" style="color: #004d40;">The Gaddi of Pir Pagaro</h2>
+                    <p class="fs-5 text-dark" style="line-height: 1.8;">
+                        The <b>Gaddi of Pir Pagaro</b> has long been a <span style="color:#00796b;font-weight:700;">lighthouse of social justice</span> in Sindh.  
+                        The <b>"Hurs" (The Free Ones)</b> emerged as a disciplined force, dedicated to the defense of their faith and homeland, upholding spiritual values while guiding the community toward progress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <section class="container timeline">
+
+        <!-- Forerunner -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir0Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">1819</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Syed Muhammad Rashid Shah (Rozay Dhani)
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            Spiritual forerunner of the Hur Jamaat. His shrine laid the ideological foundation of the
+                            Qadiriyya Rashidiya order in Sindh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1st Pir Pagaro -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir1Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">1831</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Syed Sibghatullah Shah I
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            First to bear the title Pir Pagaro. Initiated organized resistance against British colonial
+                            rule after the annexation of Sindh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Pir Pagaro -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir2Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">1847</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Pir Syed Ali Gohar Shah Rashidi I
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            A respected Sufi poet and spiritual guide who strengthened the Hur Jamaat during early
+                            British consolidation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd Pir Pagaro -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir3Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">1880</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Syed Hizbullah Shah
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            Formally organized the Hur Jamiat and led armed resistance, transforming the movement into a
+                            structured force.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th & 5th Pir (Combined – short era) -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir45Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">1896–1921</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Syed Ali Gohar Shah II & Syed Shah Mardan Shah I
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            Period of consolidation and survival as British repression intensified against the Hur
+                            community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6th Pir Pagaro -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir6Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">1941–1943</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Syed Sibghatullah Shah Rashdi II (Soreh Badshah)
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            Led the most intense anti-colonial uprising. Advocated Hindu-Muslim unity and was executed
+                            by the British in 1943.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7th Pir Pagaro -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir7Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">1952–2012</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Syed Shah Mardan Shah II
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            Restored after independence. Played a major political role and led Hur Mujahideen support
+                            during the 1965 and 1971 wars.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8th Pir Pagaro -->
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="row timeline-row">
+                <div class="col-lg-5">
+                    <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#pir8Modal"
+                        style="cursor:pointer;">
+                        <h2 class="h1 fw-bold mb-1" style="color: var(--gold);">2012–Present</h2>
+                        <h3 class="h5 fw-bold mb-3" style="color: var(--deep-green);">
+                            Sibghatullah Shah Rashdi III (Raja Saein)
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            Current Pir Pagaro. Leads the Jamaat and the GDA, combining spiritual leadership with modern
+                            political and social reform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- MODALS -->
+
+    <!-- Forerunner Modal -->
+    <div class="modal fade" id="pir0Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Syed Muhammad Rashid Shah (Rozay
+                        Dhani)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir0.jpg" class="img-fluid rounded shadow-sm" alt="Rozay Dhani">
+                            <p class="small mt-2 text-muted">Forerunner</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                Spiritual forerunner of the Hur Jamaat. Laid ideological foundation of Qadiriyya
+                                Rashidiya order in Sindh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1st Pir Modal -->
+    <div class="modal fade" id="pir1Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Syed Sibghatullah Shah I</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir1.jpg" class="img-fluid rounded shadow-sm" alt="Pir 1">
+                            <p class="small mt-2 text-muted">1st Pir Pagaro</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                First to bear the title Pir Pagaro. Initiated organized resistance against British
+                                colonial rule after the annexation of Sindh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd Pir Modal -->
+    <div class="modal fade" id="pir2Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Pir Syed Ali Gohar Shah Rashidi I
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir2.jpg" class="img-fluid rounded shadow-sm" alt="Pir 2">
+                            <p class="small mt-2 text-muted">2nd Pir Pagaro</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                A respected Sufi poet and spiritual guide who strengthened the Hur Jamaat during early
+                                British consolidation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd Pir Modal -->
+    <div class="modal fade" id="pir3Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Syed Hizbullah Shah</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir3.jpg" class="img-fluid rounded shadow-sm" alt="Pir 3">
+                            <p class="small mt-2 text-muted">3rd Pir Pagaro</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                Formally organized the Hur Jamiat and led armed resistance, transforming the movement
+                                into a structured force.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4th & 5th Pir Modal -->
+    <div class="modal fade" id="pir45Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Syed Ali Gohar Shah II & Syed Shah
+                        Mardan Shah I</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir45.jpg" class="img-fluid rounded shadow-sm" alt="Pir 4 & 5">
+                            <p class="small mt-2 text-muted">4th & 5th Pir Pagaro</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                Period of consolidation and survival as British repression intensified against the Hur
+                                community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6th Pir Modal -->
+    <div class="modal fade" id="pir6Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Syed Sibghatullah Shah Rashdi II
+                        (Soreh Badshah)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir6.jpg" class="img-fluid rounded shadow-sm" alt="Pir 6">
+                            <p class="small mt-2 text-muted">6th Pir Pagaro</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                Led the most organized phase of Hur resistance against British. Advocated Hindu-Muslim
+                                unity and was executed in 1943.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7th Pir Modal -->
+    <div class="modal fade" id="pir7Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Syed Shah Mardan Shah II</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir7.jpg" class="img-fluid rounded shadow-sm" alt="Pir 7">
+                            <p class="small mt-2 text-muted">7th Pir Pagaro</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                Restored after independence. Played a major political role and led Hur Mujahideen
+                                support during the 1965 and 1971 wars.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8th Pir Modal -->
+    <div class="modal fade" id="pir8Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" style="color: var(--deep-green);">Sibghatullah Shah Rashdi III (Raja
+                        Saein)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4 text-center">
+                            <img src="assets/pirs/pir8.jpg" class="img-fluid rounded shadow-sm" alt="Pir 8">
+                            <p class="small mt-2 text-muted">8th Pir Pagaro</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-muted">
+                                Current Pir Pagaro. Leads the Jamaat and GDA, emphasizing social reforms, education,
+                                women’s inheritance rights, and national security.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+<section class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+        <h2 class="fw-bold mb-5 text-center" style="color: #004d40;">Political Leadership of Pir Pagaro</h2>
+
+        <div class="row g-4">
+            <!-- 7th Pir Pagaro -->
+            <div class="col-md-6">
+                <div class="p-4 rounded-4 shadow-sm h-100" style="background: #ffffff;">
+                    <h5 class="fw-bold text-success mb-3">7th Pir Pagaro: Syed Shah Mardan Shah II (1952–2012)</h5>
+                    <p class="text-muted fs-6" style="line-height: 1.7;">
+                        Led the <b>Pakistan Muslim League-Functional (PML-F)</b>, restoring Hur influence after independence.
+                        Mobilized the Hur Mujahideen during the 1965 India-Pakistan war. A major political figure in rural Sindh,
+                        balancing spiritual guidance with active politics.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 8th Pir Pagaro -->
+            <div class="col-md-6">
+                <div class="p-4 rounded-4 shadow-sm h-100" style="background: #ffffff;">
+                    <h5 class="fw-bold text-success mb-3">8th Pir Pagaro: Sibghatullah Shah Rashdi III (Raja Saein) (2012–Present)</h5>
+                    <p class="text-muted fs-6" style="line-height: 1.7;">
+                        Heads the <b>PML-F</b> and formed the <b>Grand Democratic Alliance (GDA)</b> for greater influence in Sindh.
+                        Advocates girls’ education, environmental initiatives, and women’s property rights according to Shariat.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Political Evolution -->
+            <div class="col-md-6">
+                <div class="p-4 rounded-4 shadow-sm h-100" style="background: #ffffff;">
+                    <h5 class="fw-bold text-success mb-3">Political Evolution of the Hur Leadership</h5>
+                    <ul class="text-muted fs-6" style="line-height: 1.7; list-style-type: disc; padding-left: 1.2rem;">
+                        <li><b>Earlier:</b> PML-F under the 7th Pir focused on rural Sindh and spiritual-political guidance.</li>
+                        <li><b>Now:</b> GDA under the 8th Pir works on alliances, election reforms, and civic initiatives.</li>
+                        <li>The Hur community continues balancing spiritual authority with active political engagement.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social & Welfare Initiatives -->
+            <div class="col-md-6">
+                <div class="p-4 rounded-4 shadow-sm h-100" style="background: #ffffff;">
+                    <h5 class="fw-bold text-success mb-3">Social & Welfare Initiatives</h5>
+                    <ul class="text-muted fs-6" style="line-height: 1.7; list-style-type: circle; padding-left: 1.2rem;">
+                        <li>Promotion of girls’ education and women empowerment.</li>
+                        <li>Environmental programs like tree plantation drives.</li>
+                        <li>Community guidance and dispute resolution following Shariat.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery / Media Section -->
+<section class="py-5" style="background: #f8f9fa;">
+    <div class="container" data-aos="fade-up">
+        <h2 class="fw-bold mb-5 text-center" style="color: #004d40;">Gallery & Historical Media</h2>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Gallery Image Card Template -->
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card rounded-4 overflow-hidden shadow-sm position-relative" style="height: 250px;">
+                    <img src="assets/images/history/one.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Pir Pagaro 1">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card rounded-4 overflow-hidden shadow-sm position-relative" style="height: 250px;">
+                    <img src="assets/images/history/two.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Pir Pagaro 2">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card rounded-4 overflow-hidden shadow-sm position-relative" style="height: 250px;">
+                    <img src="assets/images/history/three.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Pir Pagaro 3">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card rounded-4 overflow-hidden shadow-sm position-relative" style="height: 250px;">
+                    <img src=" assets/images/history/six.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Pir Pagaro 4">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card rounded-4 overflow-hidden shadow-sm position-relative" style="height: 250px;">
+                    <img src="assets/images/history/four.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Pir Pagaro 5">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card rounded-4 overflow-hidden shadow-sm position-relative" style="height: 250px;">
+                    <img src="assets/images/history/five.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Pir Pagaro 6">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  
+
+
+    <div class="text-center my-5">
+        <button id="downloadPDF" class="btn btn-lg px-4" style="background: var(--gold); color: #fff;">
+            <i class="fa-solid fa-file-pdf me-2"></i>
+            Download Complete History (PDF)
+        </button>
+    </div>
+
+
+   
+
+
+    <footer class="mt-5 py-5 text-white" style="background: var(--deep-green);">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3" style="color: var(--gold);">Pir Pagaro Jamaat</h4>
+                    <p class="small opacity-75">
+                        Preserving heritage, discipline, and guidance through faith and history.
+                    </p>
+                    <p class="small opacity-75 mb-0">
+                        <i class="fa-solid fa-location-dot me-2" style="color: var(--gold);"></i>
+                        Peer-Jo-Goth, Sindh, Pakistan
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3" style="color: var(--gold);">Quick Links</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-white text-decoration-none opacity-75">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="history.html" class="text-white text-decoration-none opacity-75">History</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="nizam-e-jamaat.html"
+                                class="text-white text-decoration-none opacity-75">Nizam-e-Jamaat</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="events.html" class="text-white text-decoration-none opacity-75">Events</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h4 class="fw-bold mb-3" style="color: var(--gold);">Connect With Us</h4>
+                    <div class="d-flex justify-content-md-end gap-3 mt-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+
+                    <p class="small opacity-50 mt-3">Welcome to the Official Website of Dargha Shareef Peer Pagaro</p>
+                </div>
+
+            </div>
+
+            <hr class="my-4 opacity-25">
+
+            <div class="text-center pb-3">
+                <p class="small mb-0 opacity-50">
+                    © 2026 Pir Pagaro Jamaat. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        document.getElementById("downloadPDF").addEventListener("click", () => {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF('p', 'pt', 'a4');
+
+            // Clone the entire history section including hidden modals for PDF
+            const historyContent = document.querySelector("body").cloneNode(true);
+
+            // Optional: you can hide elements not needed in PDF (like navbar, footer, buttons)
+            historyContent.querySelectorAll('nav, footer, #downloadPDF, .modal').forEach(el => {
+                el.style.display = 'none';
+            });
+
+            // Append cloned content to a temporary div
+            const tempDiv = document.createElement("div");
+            tempDiv.style.position = "absolute";
+            tempDiv.style.top = "-9999px";
+            tempDiv.appendChild(historyContent);
+            document.body.appendChild(tempDiv);
+
+            // Use html2canvas to convert page to image
+            html2canvas(tempDiv, { scale: 2 }).then(canvas => {
+                const imgData = canvas.toDataURL("image/png");
+                const imgProps = doc.getImageProperties(imgData);
+                const pdfWidth = doc.internal.pageSize.getWidth();
+                const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+
+                // Check if content is longer than one page
+                let heightLeft = pdfHeight;
+                let position = 0;
+
+                doc.addImage(imgData, 'PNG', 0, position, pdfWidth, pdfHeight);
+                heightLeft -= doc.internal.pageSize.getHeight();
+
+                while (heightLeft > 0) {
+                    position = heightLeft - pdfHeight;
+                    doc.addPage();
+                    doc.addImage(imgData, 'PNG', 0, position, pdfWidth, pdfHeight);
+                    heightLeft -= doc.internal.pageSize.getHeight();
+                }
+
+                doc.save("Pir_Pagaro_History.pdf");
+                document.body.removeChild(tempDiv);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

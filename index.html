@@ -25,11 +25,41 @@
         color: var(--deep-green);
         border: none;
         transition: 0.3s;
+
+        font-weight: bold;
     }
 
     .btn-gold:hover {
         background-color: #bfa030;
         color: white;
+    }
+
+    .bg-gold {
+        background-color: var(--gold);
+        color: var(--deep-green);
+    }
+
+    .shadow-lg img:hover {
+        transform: scale(1.05);
+    }
+
+    .btn-outline-dark:hover {
+        background-color: var(--deep-green);
+        color: var(--gold);
+        border-color: var(--deep-green);
+    }
+
+    .profile-frame {
+        position: relative;
+    }
+
+    .profile-frame::before {
+        content: '';
+        position: absolute;
+        inset: -12px;
+        border: 2px solid var(--gold);
+        border-radius: 12px;
+        z-index: -1;
     }
 </style>
 
@@ -60,15 +90,15 @@
 
     <header class="hero d-flex align-items-center text-center text-white">
         <div class="container" data-aos="fade-up">
-            <span class="text-uppercase fw-bold mb-2 d-block" style="color: var(--gold); letter-spacing: 3px;">The
+            <span class="text-uppercase fw-bold mb-2 d-block"
+                style="color: var(--gold); font-size: 20px; letter-spacing: 3px;">The
                 Qadiriyya Rashidiya Order</span>
-            <h1 class="display-3 fw-bold mb-4">The Spiritual Legacy of Pir Pagaro</h1>
+            <h1 class="display-3 fw-bold mb-4">The Spiritual Legacy Of Pir Pagaro</h1>
             <p class="lead mb-5 mx-auto px-2" style="max-width: 800px; opacity: 0.9;">
-                Welcome to the official portal of the <b>Hur Jamaat</b>. A beacon of spiritual enlightenment and
-                national resilience.
+                Connecting hearts with the spiritual legacy of Pir Pagaro — heritage service and community
             </p>
             <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                <a href="about.html" class="btn custom-btn btn-gold px-5 py-3">Explore History</a>
+                <a href="history.html" class="btn custom-btn btn-gold px-5 py-3">Explore History</a>
                 <a href="nizam-e-jamaat.html" class="btn custom-btn btn-outline-light px-5 py-3">Jamaat Structure</a>
             </div>
         </div>
@@ -76,86 +106,177 @@
 
     <section class="py-5 bg-white">
         <div class="container py-lg-5">
-            <div class="row align-items-center">
+            <div class="row align-items-center g-5">
 
-                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                    <div class="profile-frame text-center">
-                        <img src="assets/images/curren-pagaro.jpg" class="img-fluid rounded shadow-lg" alt="Pir Pagaro"
-                            style="width:100%; height:600px; object-fit:cover;">
-
+                <!-- IMAGE -->
+                <div class="col-lg-6 text-center" data-aos="fade-right">
+                    <div class="position-relative d-inline-block shadow-lg rounded-4 overflow-hidden">
+                        <img src="assets/images/Peer-Pagara.jpg" class="img-fluid" alt="Pir Pagaro"
+                            style="width:100%; height:600px; object-fit:cover; transition: transform 0.5s;">
+                        <span class="position-absolute top-0 start-0 bg-gold text-dark px-3 py-2 rounded-end shadow"
+                            style="font-weight:bold; letter-spacing:1px;">Spiritual Head</span>
                     </div>
                 </div>
 
-                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
-                    <h6 class="text-uppercase fw-bold" style="color: var(--gold); letter-spacing: 2px;">
-                        Spiritual Head
-                    </h6>
+                <!-- CONTENT -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h6 class="text-uppercase fw-bold mb-2" style="color: var(--gold); letter-spacing: 2px;">Current
+                        Leadership</h6>
 
-                    <h2 class="display-5 mb-2">Current Leadership</h2>
+                    <h2 class="display-5 fw-bold mb-4">Pir Sibghatullah Shah Rashdi-III</h2>
 
-                    <p class="text-muted fs-5 mb-1">
-                        Syed Sibghatullah Shah Rashdi III, the 8th Pir Pagaro, continues to uphold the noble lineage of
-                        spiritual guidance, national service, and social reform. Under his visionary leadership, the Hur
-                        Jamaat has transitioned into a modern era while staying deeply rooted in its historical
-                        traditions
-                        of loyalty and sacrifice.
+                    <p class="text-muted fs-5 mb-3">
+                        <b> Syed Sibghatullah Shah Rashdi III,</b> the 8th Pir Pagaro upholds the noble legacy of
+                        spiritual guidance and social service. Under his leadership, the Hur Jamaat balances tradition
+                        with modern education and community welfare, inspiring unity, devotion, and discipline
+                        worldwide.
+
                     </p>
 
-                    <p class="text-muted fs-5">
-                        His tenure is marked by a profound emphasis on educational advancement and strict community
-                        discipline. He has been instrumental in organizing the Jamaat into a more structured social
-                        force,
-                        ensuring that the message of peace, patriotism, and spiritual enlightenment reaches every
-                        follower. As the guardian of the Hur Mujahid Force, he remains a symbol of unity and a beacon of
-                        hope for millions across the globe.
+                    <p class="text-muted fs-5 mb-4">
+                        The leadership ensures that the spiritual message, heritage, and values of unity and sacrifice
+                        reach
+                        millions, fostering peace and enlightenment within the community.
                     </p>
 
-                    <div class="d-flex align-items-center gap-3 mt-4">
+                    <div class="d-flex flex-wrap gap-3 mt-4">
                         <a href="about.html" class="btn btn-gold px-4 py-2 fw-bold text-uppercase"
-                            style="font-size: 0.8rem;">
+                            style="font-size: 0.9rem;">
                             Read Full Biography
                         </a>
-
-                        <a href="nizam-e-jamaat.html" class="text-decoration-none fw-bold"
-                            style="color: var(--deep-green); font-size: 0.9rem;">
-                            View Governance →
+                        <a href="nizam-e-jamaat.html" class="btn btn-outline-dark px-4 py-2 fw-bold text-uppercase"
+                            style="font-size: 0.9rem;">
+                            View Governance
                         </a>
                     </div>
                 </div>
 
             </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-uppercase fw-bold" style="color: var(--gold); letter-spacing: 2px;">
+                    Historical Journey
+                </h6>
+                <h2 class="display-6 fw-bold">Legacy Through Time</h2>
+                <p class="text-muted">Key milestones of Pir Pagaro & Hur Jamaat</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="row g-4">
+
+                <!-- 1843 -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="p-4 bg-white shadow-sm rounded-4 border-start border-5 h-100"
+                        style="border-color: var(--gold) !important;">
+                        <h4 class="fw-bold" style="color: var(--deep-green);">1843</h4>
+                        <p class="text-muted mb-0">
+                            Foundation of the Qadiriyya Rashidiya spiritual movement, rooted in discipline and faith.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 1943 -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="p-4 bg-white shadow-sm rounded-4 border-start border-5 h-100"
+                        style="border-color: var(--deep-green) !important;">
+                        <h4 class="fw-bold" style="color: var(--deep-green);">1943</h4>
+                        <p class="text-muted mb-0">
+                            Hur Movement rises against British rule, becoming a symbol of resistance and sacrifice.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 1947 -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="p-4 bg-white shadow-sm rounded-4 border-start border-5 h-100"
+                        style="border-color: var(--gold) !important;">
+                        <h4 class="fw-bold" style="color: var(--deep-green);">1947</h4>
+                        <p class="text-muted mb-0">
+                            Historic role in the creation of Pakistan, standing firm for independence and unity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Modern Era -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="p-4 bg-white shadow-sm rounded-4 border-start border-5 h-100"
+                        style="border-color: var(--deep-green) !important;">
+                        <h4 class="fw-bold" style="color: var(--deep-green);">Modern Era</h4>
+                        <p class="text-muted mb-0">
+                            Leadership of the 8th Pir Pagaro focuses on education, reform, and structured Jamaat
+                            governance.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
     <section class="py-5 bg-light">
-        <div class="container py-4">
+        <div class="container py-5">
+
+            <!-- Heading -->
             <div class="text-center mb-5" data-aos="fade-up">
-                <h6 class="text-uppercase fw-bold" style="color: var(--gold); letter-spacing: 2px;">Visual Archives</h6>
-                <h2 class="display-6 fw-bold">Spiritual Presence</h2>
-                <div style="width: 50px; height: 3px; background: var(--gold); margin: 15px auto;"></div>
+                <h6 class="text-uppercase fw-bold" style="color: var(--gold); letter-spacing: 2px;">
+                    Visual Archives
+                </h6>
+                <h2 class="display-6 fw-bold">Spiritual Leadership</h2>
+                <p class="text-muted">Moments capturing the presence and guidance of the Pir Pagaro</p>
+                <div class="mx-auto mt-3" style="width:60px;height:3px;background:var(--gold);"></div>
             </div>
-            <div class="row g-3">
+
+            <div class="row g-4">
+
+                <!-- Image 1 -->
                 <div class="col-md-4" data-aos="zoom-in">
-                    <div class="card border-0 shadow-sm overflow-hidden">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWEpqWq9wOjImDN1QeuTXvi5A2uc5NMfIWCw&s"
-                            class="img-fluid" alt="Peer Pagaro" style="height: 300px; object-fit: cover;">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="assets/images/Current-Peer/two.jpg"
+                            class="img-fluid" style="height:300px;object-fit:cover;">
+                        <div class="card-img-overlay d-flex align-items-end p-3"
+                            style="background:linear-gradient(transparent, rgba(0,0,0,0.6));">
+                            <h6 class="text-white fw-semibold mb-0">Spiritual Authority
+                            </h6>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Image 2 -->
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm overflow-hidden">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3bNjIsQRP4JeG4y6bqij7cgaN4Ja1ciexLg&s"
-                            class="img-fluid" alt="Peer Pagaro" style="height: 300px; object-fit: cover;">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="assets/images/Current-Peer/one.jpg"
+                            class="img-fluid" style="height:300px;object-fit:cover;">
+                        <div class="card-img-overlay d-flex align-items-end p-3"
+                            style="background:linear-gradient(transparent, rgba(0,0,0,0.6));">
+                            <h6 class="text-white fw-semibold mb-0">Spiritual Guidance in Practice</h6>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Image 3 -->
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm overflow-hidden">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Ndj0iX5vf54_mQpuUMXWlXQQxur63NeX3A&s"
-                            class="img-fluid" alt="Peer Pagaro" style="height: 300px; object-fit: cover;">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="assets/images/Current-Peer/three.jpg"
+                            class="img-fluid" style="height:300px;object-fit:cover;">
+                        <div class="card-img-overlay d-flex align-items-end p-3"
+                            style="background:linear-gradient(transparent, rgba(0,0,0,0.6));">
+                            <h6 class="text-white fw-semibold mb-0">Leadership & Legacy</h6>
+                        </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
+
+
     <section class="py-5 text-white" style="background: var(--deep-green);">
         <div class="container py-4">
             <div class="row align-items-center">
@@ -186,34 +307,62 @@
         </div>
     </section>
     <section class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-6 order-md-2" data-aos="fade-left">
-                    <h6 class="text-uppercase fw-bold" style="color: var(--gold); letter-spacing: 2px;">The 8th Pir
-                        Pagaro</h6>
-                    <h2 class="display-5 fw-bold mb-4">Vision & Wisdom</h2>
-                    <p class="text-muted fs-5 mb-4">Syed Sibghatullah Shah Rashdi III is not only a spiritual leader but
-                        a visionary reformer. He has successfully integrated modern education with the traditional
-                        values of the Hur Jamaat.</p>
-                    <div class="row g-4">
-                        <div class="col-6">
-                            <h4 class="fw-bold" style="color: var(--deep-green);">5M+</h4>
-                            <p class="small text-muted">Devoted Followers</p>
-                        </div>
-                        <div class="col-6">
-                            <h4 class="fw-bold" style="color: var(--deep-green);">Legacy</h4>
-                            <p class="small text-muted">Since 1843</p>
-                        </div>
+        <div class="container py-5">
+
+            <div class="row align-items-center g-5">
+
+                <!-- IMAGE -->
+                <div class="col-lg-5 text-center" data-aos="fade-right">
+                    <div class="position-relative d-inline-block">
+                        <img src="https://thefridaytimes.com/uploads/digital_news/2019-03-29/1483603218-1687409896-1949242242.jpg"
+                            class="img-fluid rounded-4 shadow-lg border border-5"
+                            style="width: 360px; border-color: var(--gold) !important;">
                     </div>
                 </div>
-                <div class="col-md-6 order-md-1 text-center" data-aos="fade-right">
-                    <img src="https://thefridaytimes.com/uploads/digital_news/2019-03-29/1483603218-1687409896-1949242242.jpg"
-                        class="img-fluid rounded-circle border border-5 shadow"
-                        style="width: 350px; border-color: var(--gold) !important;" alt="Leadership">
+
+                <!-- CONTENT -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <span class="badge mb-3 px-3 py-2 text-uppercase"
+                        style="background: var(--gold); color: var(--deep-green); letter-spacing: 1px;">
+                        Spiritual Guide of the Era
+
+                    </span>
+
+                    <h2 class="display-5 fw-bold mb-3">Vision & Wisdom</h2>
+
+                    <p class="text-muted fs-5 mb-4">
+                        The Dargah Sharif of Pir Pagaro stands as a timeless center of spirituality, discipline, and
+                        guidance. It represents a sacred space where faith meets tradition, nurturing spiritual growth
+                        while preserving the core values of the Hur Jamaat through generations.
+
+                    </p>
+
+                    <!-- STATS -->
+                    <div class="row g-4">
+
+                        <div class="col-sm-6">
+                            <div class="p-4 rounded-4 shadow-sm bg-light h-100">
+                                <h3 class="fw-bold mb-1" style="color: var(--deep-green);">5M+</h3>
+                                <p class="small text-muted mb-0">Devoted Followers Worldwide</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="p-4 rounded-4 shadow-sm bg-light h-100">
+                                <h3 class="fw-bold mb-1" style="color: var(--deep-green);">1843</h3>
+                                <p class="small text-muted mb-0">Spiritual Legacy Since</p>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
     </section>
+
     <section class="py-5" style="background-color: #f9f9f9;">
         <div class="container py-4">
             <div class="text-center mb-5" data-aos="fade-up">

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Pir Pagaro & Jamaat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0, 77, 64, 0.85), rgba(0, 77, 64, 0.85)),
+                url('assets/about-bg.jpg') center/cover no-repeat;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .mv-card {
+            border: 1px solid var(--gold);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .mv-card:hover {
+            background-color: var(--light-gray);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .leader-img-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .leader-img-container::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 5px solid var(--gold);
+            z-index: -1;
+            border-radius: 15px;
+        }
+
+        img {
+            image-rendering: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--deep-green);">
+                BHEJ PAGARA<span style="color: var(--gold);">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase fw-semibold" style="font-size: 0.85rem;">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html"
+                            style="color: var(--gold) !important;">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="khalifaas.html">Khalifaas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nizam-e-jamaat.html">Nizam-e-Jamaat </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3" data-aos="fade-down">The Spiritual Legacy</h1>
+            <p class="lead" data-aos="fade-up">Understanding the Role and Impact of the Pir Pagaro and the Hur Jamaat.
+            </p>
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-uppercase fw-bold text-warning mb-2">Spiritual Governance</h6>
+                <h2 class="display-5 fw-bold">Leadership, Jamaat & Discipline</h2>
+                <div style="width:60px; height:3px; background:#FFC107; margin:10px auto;"></div>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Current Pir Pagaro -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="p-4 rounded-4 shadow-sm h-100" style="background:#f9f9f9;">
+                        <h4 class="fw-bold text-warning mb-3">Current Pir Pagaro</h4>
+                        <p class="text-muted fs-6">
+                            Syed Sibghatullah Shah Rashdi III, the 8th Pir Pagaro, continues the spiritual lineage of
+                            the Rashdi Khandan. He emphasizes devotion, education, and social welfare while maintaining
+                            the traditional values of the Jamaat.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Jamaat -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 rounded-4 shadow-sm h-100" style="background:#f9f9f9;">
+                        <h4 class="fw-bold text-warning mb-3">Hur Jamaat</h4>
+                        <p class="text-muted fs-6">
+                            The Hur Jamaat represents a disciplined spiritual community that follows the teachings of
+                            the Rashdi family. It focuses on unity, service, and moral guidance for all its members.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Discipline & Rules -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 rounded-4 shadow-sm h-100" style="background:#f9f9f9;">
+                        <h4 class="fw-bold text-warning mb-3">Discipline & Regulations</h4>
+                        <p class="text-muted fs-6">
+                            Darghah Sharif maintains strict spiritual and social regulations. Followers observe
+                            discipline in education, religious practices, and community service, ensuring the legacy of
+                            loyalty, sacrifice, and enlightenment continues.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+
+                <!-- Image -->
+                <div class="col-lg-5 text-center" data-aos="fade-right">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Pir_Jo_Goth_Khairpur_Sindh_by_Usman_Ghani.jpg"
+                        class="img-fluid rounded-4 shadow-lg" alt="Current Pir Pagaro"
+                        style="width:100%; height:600px; object-fit:cover;">
+
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <h6 class="text-uppercase fw-bold text-warning mb-2">Current Leadership</h6>
+                    <h2 class="display-5 fw-bold mb-3">Darghah Sharif</h2>
+                    <p class="text-muted fs-5 mb-3">
+                        Darghah Sharif, under the guidance of the current Pir Pagaro, inspires devotion, discipline, and
+                        community service. His leadership balances tradition with modern education and social welfare.
+                    </p>
+                    <p class="text-muted fs-5">
+                        He is the guardian of the Jamaat’s welfare and a symbol of unity for millions worldwide.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+
+
+
+                <!-- TEXT -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <h6 class="text-uppercase fw-bold text-warning mb-2">Current Spiritual Head</h6>
+                    <h2 class="display-5 fw-bold mb-3">Syed Sibghatullah Shah Rashdi III</h2>
+                    <p class="text-muted fs-5 mb-3" style="line-height:1.7;">
+                        The 8th Pir Pagaro continues the spiritual lineage of the Rashdi Khandan, blending traditional
+                        guidance with modern education and social welfare. His leadership emphasizes discipline,
+                        devotion, and community development.
+                    </p>
+                    <p class="text-muted fs-5" style="line-height:1.7;">
+                        Darghah Sharif under his guidance remains a beacon of unity, inspiration, and enlightenment for
+                        followers worldwide.
+                    </p>
+
+                    <!-- OPTIONAL STATS -->
+                    <div class="d-flex gap-4 mt-4">
+                        <div class="text-center">
+                            <h4 class="fw-bold text-success mb-0">5M+</h4>
+                            <small class="text-muted">Devoted Followers</small>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="fw-bold text-success mb-0">1843</h4>
+                            <small class="text-muted">Spiritual Legacy</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- IMAGE -->
+                <div class="col-lg-5 text-center" data-aos="fade-right">
+                    <div class="position-relative rounded-4 shadow-lg overflow-hidden" style="background:#f5f5f5;">
+                        <img src="assets/images/New folder/one.jpg"
+                            class="img-fluid rounded-4 shadow-lg" alt="Pir Jo Goth, Darghah Sharif"
+                            style="width:100%; height:600px; object-fit:cover;">
+                        <span
+                            class="position-absolute top-0 start-0 bg-warning text-dark px-3 py-1 fw-bold rounded-bottom-end">
+                            8th Pir Pagaro
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-uppercase fw-bold text-warning mb-2">Hur Jamaat</h6>
+                <h2 class="display-6 fw-bold">Rules & Discipline</h2>
+                <p class="text-muted">Guiding principles and ethics upheld by the Jamaat members</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 text-center h-100">
+                        <i class="fa-solid fa-book-open fs-1 text-warning mb-3"></i>
+                        <h5 class="fw-bold mb-2">Spiritual Teachings</h5>
+                        <p class="text-muted">Followers are guided by centuries-old spiritual values and prayers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 text-center h-100">
+                        <i class="fa-solid fa-users fs-1 text-warning mb-3"></i>
+                        <h5 class="fw-bold mb-2">Community Discipline</h5>
+                        <p class="text-muted">Strict adherence to the rules of loyalty, unity, and service.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 text-center h-100">
+                        <i class="fa-solid fa-hand-holding-heart fs-1 text-warning mb-3"></i>
+                        <h5 class="fw-bold mb-2">Social Welfare</h5>
+                        <p class="text-muted">Helping the needy, education initiatives, and ethical community service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-uppercase fw-bold text-warning mb-2">Visual Archives</h6>
+                <h2 class="display-6 fw-bold">Spiritual & Community Moments</h2>
+                <div style="width:50px; height:3px; background:#FFC107; margin:10px auto;"></div>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Image 1 -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+                        <img src="assets/images/New folder/current-peer-sahab.png"
+                            class="img-fluid" style="height:350px; object-fit:cover;" alt="Current Pir Pagaro">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: rgba(0,0,0,0.5);">
+                            <h6 class="text-white mb-0 fw-bold">Syed Sibghatullah Shah Rashdi III</h6>
+                            <small class="text-white-50">Current Pir Pagaro</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+                        <img src="assets/images/New folder/shah-Mardan-Shah.png"
+                            class="img-fluid" style="height:350px; object-fit:cover;"
+                            alt="Father of Current Pir Pagaro">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: rgba(0,0,0,0.5);">
+                            <h6 class="text-white mb-0 fw-bold">Syed Shah Mardan Shah</h6>
+                            <small class="text-white-50">Father of Current Pir Pagaro</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm position-relative">
+                        <img src="assets/images/New folder/Jammat.png"
+                            class="img-fluid" style="height:350px; object-fit:cover;" alt="Darghah Discipline">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: rgba(0,0,0,0.5);">
+                            <h6 class="text-white mb-0 fw-bold">Hur Jamaat</h6>
+                            <small class="text-white-50">Community & Spiritual Discipline</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-5 bg-light">
+        <div class="container ">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-uppercase fw-bold text-warning mb-2">Visual Archives</h6>
+                <h2 class="display-6 fw-bold">Spiritual Moments</h2>
+                <div style="width:50px; height:3px; background:#FFC107; margin:10px auto;"></div>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Image 1 -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm">
+                        <img src="assets/images/one.jpg"
+                            class="img-fluid" style="height:350px; object-fit:cover;" alt="Spiritual Leadership">
+                        <div class="card-img-overlay d-flex align-items-end p-3"
+                            style="background:linear-gradient(transparent, rgba(0,0,0,0.6));">
+                            <h6 class="text-white fw-semibold mb-0">Spiritual Leadership</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm">
+                        <img src="assets/images/event.png"
+                            class="img-fluid" style="height:350px; object-fit:cover;" alt="Darghah Event">
+                        <div class="card-img-overlay d-flex align-items-end p-3"
+                            style="background:linear-gradient(transparent, rgba(0,0,0,0.6));">
+                            <h6 class="text-white fw-semibold mb-0">Darghah Event</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm">
+                        <img src="assets/images/three.jpg"
+                            class="img-fluid" style="height:350px; object-fit:cover;" alt="Leadership & Guidance">
+                        <div class="card-img-overlay d-flex align-items-end p-3"
+                            style="background:linear-gradient(transparent, rgba(0,0,0,0.6));">
+                            <h6 class="text-white fw-semibold mb-0">Leadership & Guidance</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="mt-5 py-5 text-white" style="background: var(--deep-green);">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3" style="color: var(--gold);">Pir Pagaro Jamaat</h4>
+                    <p class="small opacity-75">
+                        Preserving heritage, discipline, and guidance through faith and history.
+                    </p>
+                    <p class="small opacity-75 mb-0">
+                        <i class="fa-solid fa-location-dot me-2" style="color: var(--gold);"></i>
+                        Peer-Jo-Goth, Sindh, Pakistan
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3" style="color: var(--gold);">Quick Links</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-white text-decoration-none opacity-75">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="history.html" class="text-white text-decoration-none opacity-75">History</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="nizam-e-jamaat.html"
+                                class="text-white text-decoration-none opacity-75">Nizam-e-Jamaat</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="events.html" class="text-white text-decoration-none opacity-75">Events</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h4 class="fw-bold mb-3" style="color: var(--gold);">Connect With Us</h4>
+                    <div class="d-flex justify-content-md-end gap-3 mt-3">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+
+                    <p class="small opacity-50 mt-3">Welcome to the Official Website of Dargha Shareef Peer Pagaro</p>
+                </div>
+
+            </div>
+
+            <hr class="my-4 opacity-25">
+
+            <div class="text-center pb-3">
+                <p class="small mb-0 opacity-50">
+                    © 2026 Pir Pagaro Jamaat. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+
+</html>
